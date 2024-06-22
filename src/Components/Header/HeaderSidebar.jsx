@@ -8,7 +8,7 @@ const HeaderSidebar = () => {
         <div className="header-left">
           <Link to="/" className="logo">
             <img src="assets/img/logo.png" width="35" height="35" alt />
-            <span>Pre Clinic</span>
+            <span>Pre Clinic 1</span>
           </Link>
         </div>
         <a id="toggle_btn" href="javascript:void(0);">
