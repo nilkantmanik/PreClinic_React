@@ -298,16 +298,16 @@ const HeaderSidebar = () => {
                 </a>
                 <ul style={{ display: "none" }}>
                   <li>
-                    <a href="patients.html">Patients List</a>
+                    <Link to="/patientList">Patients List</Link>
                   </li>
                   <li>
-                    <a href="add-patient.html">Add Patients</a>
+                    <Link to="/addPatients">Add Patients</Link>
                   </li>
                   <li>
-                    <a href="edit-patient.html">Edit Patients</a>
+                    <Link to="/editPatients">Edit Patients</Link>
                   </li>
                   <li>
-                    <a href="patient-profile.html">Patients Profile</a>
+                    <Link to="/patientProfile">Patients Profile</Link>
                   </li>
                 </ul>
               </li>
