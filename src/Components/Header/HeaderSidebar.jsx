@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-let submenuOpen = false;
+// let submenuOpen = false;
 const HeaderSidebar = () => {
+  const [submenuOpen, setSubmenuOpen] = useState(false);
+
   const toggleSubmenu = () => {
-    submenuOpen = !submenuOpen;
+    // submenuOpen = !submenuOpen;
+    setSubmenuOpen(!submenuOpen);
   };
 
   return (
