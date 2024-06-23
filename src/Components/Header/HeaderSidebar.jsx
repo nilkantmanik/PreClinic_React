@@ -7,15 +7,15 @@ const HeaderSidebar = () => {
       <div className="header">
         <div className="header-left">
           <Link to="/" className="logo">
-            <img src="assets/img/logo.png" width="35" height="35" alt />
-            <span>Pre Clinic 1</span>
+            <img src="assets/img/logo.png" width="35" height="35" alt="img" />
+            <span>Pre Clinic</span>
           </Link>
         </div>
         <a id="toggle_btn" href="javascript:void(0);">
-          <img src="assets/img/icons/bar-icon.svg" alt />
+          <img src="assets/img/icons/bar-icon.svg" alt="img" />
         </a>
         <a id="mobile_btn" className="mobile_btn float-start" href="#sidebar">
-          <img src="assets/img/icons/bar-icon.svg" alt />
+          <img src="assets/img/icons/bar-icon.svg" alt="img" />
         </a>
         <div className="top-nav-search mob-view">
           <form>
@@ -25,7 +25,7 @@ const HeaderSidebar = () => {
               placeholder="Search here"
             />
             <a className="btn">
-              <img src="assets/img/icons/search-normal.svg" alt />
+              <img src="assets/img/icons/search-normal.svg" alt="img" />
             </a>
           </form>
         </div>
@@ -36,7 +36,7 @@ const HeaderSidebar = () => {
               className="dropdown-toggle nav-link"
               data-bs-toggle="dropdown"
             >
-              <img src="assets/img/icons/note-icon-02.svg" alt />
+              <img src="assets/img/icons/note-icon-02.svg" alt="img" />
               <span className="pulse"></span>
             </a>
             <div className="dropdown-menu notifications">
@@ -175,7 +175,7 @@ const HeaderSidebar = () => {
               id="open_msg_box"
               className="hasnotifications nav-link"
             >
-              <img src="assets/img/icons/note-icon-01.svg" alt />
+              <img src="assets/img/icons/note-icon-01.svg" alt="img" />
               <span className="pulse"></span>
             </a>
           </li>
@@ -210,7 +210,7 @@ const HeaderSidebar = () => {
           </li>
           <li className="nav-item">
             <a href="settings.html" className="hasnotifications nav-link">
-              <img src="assets/img/icons/setting-icon-01.svg" alt />
+              <img src="assets/img/icons/setting-icon-01.svg" alt="img" />
             </a>
           </li>
         </ul>
@@ -247,51 +247,50 @@ const HeaderSidebar = () => {
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-01.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-01.svg" alt="img" />
                   </span>
                   <span> Dashboard </span>
                   <span className="menu-arrow"></span>
                 </a>
                 <ul>
                   <li>
-                    <Link to="/addAppointment"> Admin Dashboard</Link>
+                    <Link to="/"> Admin Dashboard</Link>
                   </li>
                   <li>
                     <Link to="/doctorDashboard">Doctor Dashboard</Link>
                   </li>
                   <li>
-                    <a href="patient-dashboard.html">Patient Dashboard</a>
+                    <Link to="patientDashboard">Patient Dashboard</Link>
                   </li>
                 </ul>
               </li>
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-02.svg" alt="" />
-                    <img src="../" alt="" />
+                    <img src="assets/img/icons/menu-icon-02.svg" alt="img" />
                   </span>
                   <span> Doctors </span>
                   <span className="menu-arrow"></span>
                 </a>
                 <ul style={{ display: "none" }}>
                   <li>
-                    <a href="doctors.html">Doctor List</a>
+                    <Link to="/doctorsList">Doctor List</Link>
                   </li>
                   <li>
-                    <a href="add-doctor.html">Add Doctor</a>
+                    <Link to="/addDoctor">Add Doctor</Link>
                   </li>
                   <li>
-                    <a href="edit-doctor.html">Edit Doctor</a>
+                    <Link to="/editDoctor">Edit Doctor</Link>
                   </li>
                   <li>
-                    <a href="doctor-profile.html">Doctor Profile</a>
+                    <Link to="/doctorProfile">Doctor Profile</Link>
                   </li>
                 </ul>
               </li>
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-03.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-03.svg" alt="img" />
                   </span>
                   <span>Patients </span>
                   <span className="menu-arrow"></span>
@@ -314,7 +313,7 @@ const HeaderSidebar = () => {
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-08.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-08.svg" alt="img" />
                   </span>
                   <span> Staff </span>
                   <span className="menu-arrow"></span>
@@ -343,7 +342,7 @@ const HeaderSidebar = () => {
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-04.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-04.svg" alt="img" />
                   </span>
                   <span> Accounts </span>
                   <span className="menu-arrow"></span>
@@ -369,7 +368,7 @@ const HeaderSidebar = () => {
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-05.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-05.svg" alt="img" />
                   </span>
                   <span> Payroll </span>
                   <span className="menu-arrow"></span>
@@ -386,7 +385,7 @@ const HeaderSidebar = () => {
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-06.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-06.svg" alt="img" />
                   </span>
                   <span> Leave Management </span>
                   <span className="menu-arrow"></span>
@@ -406,7 +405,7 @@ const HeaderSidebar = () => {
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-07.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-07.svg" alt="img" />
                   </span>
                   <span> Report </span>
                   <span className="menu-arrow"></span>
@@ -423,7 +422,7 @@ const HeaderSidebar = () => {
               <li>
                 <a href="settings.html">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-09.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-09.svg" alt="img" />
                   </span>
                   <span> Settings </span>
                 </a>
@@ -432,7 +431,7 @@ const HeaderSidebar = () => {
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-10.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-10.svg" alt="img" />
                   </span>
                   <span> Profile </span>
                   <span className="menu-arrow"></span>
@@ -449,7 +448,7 @@ const HeaderSidebar = () => {
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-11.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-11.svg" alt="img" />
                   </span>
                   <span> Authentication </span>
                   <span className="menu-arrow"></span>
@@ -472,7 +471,7 @@ const HeaderSidebar = () => {
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-12.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-12.svg" alt="img" />
                   </span>
                   <span> Error Pages </span>
                   <span className="menu-arrow"></span>
@@ -489,7 +488,7 @@ const HeaderSidebar = () => {
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-13.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-13.svg" alt="img" />
                   </span>
                   <span> Pages </span>
                   <span className="menu-arrow"></span>
@@ -512,7 +511,7 @@ const HeaderSidebar = () => {
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-16.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-16.svg" alt="img" />
                   </span>
                   <span> Email </span>
                   <span className="menu-arrow"></span>
@@ -532,7 +531,7 @@ const HeaderSidebar = () => {
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-14.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-14.svg" alt="img" />
                   </span>
                   <span> Blog </span>
                   <span className="menu-arrow"></span>
@@ -555,7 +554,7 @@ const HeaderSidebar = () => {
               <li>
                 <a href="assets.html">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-15.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-15.svg" alt="img" />
                   </span>
                   <span> Assests </span>
                 </a>
@@ -563,7 +562,7 @@ const HeaderSidebar = () => {
               <li className="submenu">
                 <a href="#">
                   <span className="menu-side">
-                    <img src="assets/img/icons/menu-icon-17.svg" alt="" />
+                    <img src="assets/img/icons/menu-icon-17.svg" alt="imag" />
                   </span>
                   <span> Multilevel </span>
                   <span className="menu-arrow"></span>
