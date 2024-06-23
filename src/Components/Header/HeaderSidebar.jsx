@@ -1,15 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const HeaderSidebar = () => {
   return (
     <>
       <div className="header">
         <div className="header-left">
-          <Link to="/" className="logo">
+          <NavLink to="/" activeClassName="active" className="logo">
             <img src="assets/img/logo.png" width="35" height="35" alt="img" />
             <span>Pre Clinic</span>
-          </Link>
+          </NavLink>
         </div>
         <a id="toggle_btn" href="javascript:void(0);">
           <img src="assets/img/icons/bar-icon.svg" alt="img" />
@@ -254,13 +254,20 @@ const HeaderSidebar = () => {
                 </a>
                 <ul>
                   <li>
-                    <Link to="/"> Admin Dashboard</Link>
+                    <NavLink to="/" activeClassName="active">
+                      {" "}
+                      Admin Dashboard
+                    </NavLink>
                   </li>
                   <li>
-                    <Link to="/doctorDashboard">Doctor Dashboard</Link>
+                    <NavLink to="/doctorDashboard" activeClassName="active">
+                      Doctor Dashboard
+                    </NavLink>
                   </li>
                   <li>
-                    <Link to="patientDashboard">Patient Dashboard</Link>
+                    <NavLink to="patientDashboard" activeClassName="active">
+                      Patient Dashboard
+                    </NavLink>
                   </li>
                 </ul>
               </li>
@@ -274,16 +281,24 @@ const HeaderSidebar = () => {
                 </a>
                 <ul style={{ display: "none" }}>
                   <li>
-                    <Link to="/doctorsList">Doctor List</Link>
+                    <NavLink to="/doctorsList" activeClassName="active">
+                      Doctor List
+                    </NavLink>
                   </li>
                   <li>
-                    <Link to="/addDoctor">Add Doctor</Link>
+                    <NavLink to="/addDoctor" activeClassName="active">
+                      Add Doctor
+                    </NavLink>
                   </li>
                   <li>
-                    <Link to="/editDoctor">Edit Doctor</Link>
+                    <NavLink to="/editDoctor" activeClassName="active">
+                      Edit Doctor
+                    </NavLink>
                   </li>
                   <li>
-                    <Link to="/doctorProfile">Doctor Profile</Link>
+                    <NavLink to="/doctorProfile" activeClassName="active">
+                      Doctor Profile
+                    </NavLink>
                   </li>
                 </ul>
               </li>
@@ -297,16 +312,24 @@ const HeaderSidebar = () => {
                 </a>
                 <ul style={{ display: "none" }}>
                   <li>
-                    <Link to="/patientList">Patients List</Link>
+                    <NavLink to="/patientList" activeClassName="active">
+                      Patients List
+                    </NavLink>
                   </li>
                   <li>
-                    <Link to="/addPatients">Add Patients</Link>
+                    <NavLink to="/addPatients" activeClassName="active">
+                      Add Patients
+                    </NavLink>
                   </li>
                   <li>
-                    <Link to="/editPatients">Edit Patients</Link>
+                    <NavLink to="/editPatients" activeClassName="active">
+                      Edit Patients
+                    </NavLink>
                   </li>
                   <li>
-                    <Link to="/patientProfile">Patients Profile</Link>
+                    <NavLink to="/patientProfile" activeClassName="active">
+                      Patients Profile
+                    </NavLink>
                   </li>
                 </ul>
               </li>
