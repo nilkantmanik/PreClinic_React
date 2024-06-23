@@ -485,7 +485,12 @@ const AddAppointment = () => {
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-body text-center">
-                <img src="assets/img/sent.png" alt width="50" height="46" />
+                <img
+                  src="assets/img/sent.png"
+                  alt="img"
+                  width="50"
+                  height="46"
+                />
                 <h3>Are you sure want to delete this ?</h3>
                 <div className="m-t-20">
                   <a href="#" className="btn btn-white" data-bs-dismiss="modal">
