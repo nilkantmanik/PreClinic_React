@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
+let submenuOpen = false;
 const HeaderSidebar = () => {
+  const toggleSubmenu = () => {
+    submenuOpen = !submenuOpen;
+  };
+
   return (
     <>
       <div className="header">
         <div className="header-left">
-          <NavLink to="/" activeClassName="active" className="logo">
+          <NavLink to="/" className="logo">
             <img src="assets/img/logo.png" width="35" height="35" alt="img" />
             <span>Pre Clinic</span>
           </NavLink>
@@ -245,16 +250,19 @@ const HeaderSidebar = () => {
             <ul>
               <li className="menu-title">Main</li>
               <li className="submenu">
-                <a href="#">
+                <Link to="#" onClick={toggleSubmenu}>
                   <span className="menu-side">
                     <img src="assets/img/icons/menu-icon-01.svg" alt="img" />
                   </span>
                   <span> Dashboard </span>
                   <span className="menu-arrow"></span>
-                </a>
-                <ul>
+                </Link>
+                <ul style={{ display: submenuOpen ? "block" : "none" }}>
                   <li>
-                    <NavLink to="/" activeClassName="active">
+                    <NavLink
+                      to="/"
+                      // className={({ isActive }) => (isActive ? "active" : "")}
+                    >
                       {" "}
                       Admin Dashboard
                     </NavLink>
