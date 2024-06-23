@@ -13,6 +13,12 @@ import Patients from "./Components/Patients/Patients";
 import AddPatients from "./Components/Patients/AddPatients";
 import EditPatients from "./Components/Patients/EditPatients";
 import PatientsProfile from "./Components/Patients/PatientsProfile";
+import StaffLIst from "./Components/Staff/StaffLIst";
+import AddStaff from "./Components/Staff/AddStaff";
+import StaffProfile from "./Components/Staff/StaffProfile";
+import StaffLeave from "./Components/Staff/StaffLeave";
+import StaffHoliday from "./Components/Staff/StaffHoliday";
+import StaffAttendance from "./Components/Staff/StaffAttendance";
 
 const App = () => {
   return (
@@ -37,6 +43,12 @@ const App = () => {
         <Route path="/addPatients" element={<AddPatients />} />
         <Route path="/editPatients" element={<EditPatients />} />
         <Route path="/patientProfile" element={<PatientsProfile />} />
+        <Route path="/staffList" element={<StaffLIst />} />
+        <Route path="/addStaff" element={<AddStaff />} />
+        <Route path="/staffProfile" element={<StaffProfile />} />
+        <Route path="/staffLeave" element={<StaffLeave />} />
+        <Route path="/staffHoliday" element={<StaffHoliday />} />
+        <Route path="/staffAttendance" element={<StaffAttendance />} />
       </Routes>
     </Router>
   );

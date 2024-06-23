@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const HeaderSidebar = () => {
   return (
@@ -343,23 +343,26 @@ const HeaderSidebar = () => {
                 </a>
                 <ul style={{ display: "none" }}>
                   <li>
-                    <a href="staff-list.html">Staff List</a>
+                    <Link to="/staffList">Staff List</Link>
                   </li>
                   <li>
-                    <a href="add-staff.html">Add Staff</a>
+                    <Link to="/addStaff">Add Staff</Link>
                   </li>
                   <li>
-                    <a href="staff-profile.html">Staff Profile</a>
+                    <NavLink to="/staffProfile">Staff Profile</NavLink>
                   </li>
-                  <li>
-                    <a href="staff-leave.html">Leaves</a>
-                  </li>
-                  <li>
-                    <a href="staff-holiday.html">Holidays</a>
-                  </li>
-                  <li>
-                    <a href="staff-attendance.html">Attendance</a>
-                  </li>
+                  <NavLink to="/staffLeave" activeClassName="active">
+                    {" "}
+                    Leave       
+                  </NavLink>
+                  <NavLink to="/staffHoliday" activeClassName="active">
+                    {" "}
+                    Holidays       
+                  </NavLink>
+                  <NavLink to="/staffAttendance" activeClassName="active">
+                    {" "}
+                    Attendance       
+                  </NavLink>
                 </ul>
               </li>
               <li className="submenu">
